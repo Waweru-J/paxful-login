@@ -8,6 +8,9 @@ import {
   import HomePage from "./pages/HomePage";
   import NotFoundPage from "./pages/NotFoundPage";
   import ErrorBoundary from "./components/ErrorBoundary";
+import Eligibility from "./pages/Eligibility";
+import Contact from "./pages/Contact";
+import Services from "./components/Services";
   
   // Create routes with individual ErrorBoundary wrapped around components
   const router = createBrowserRouter(
@@ -27,6 +30,30 @@ import {
             element={
               <ErrorBoundary>
                 <NotFoundPage />
+              </ErrorBoundary>
+            }
+          />
+          <Route
+            path="contact"
+            element={
+              <ErrorBoundary>
+                <Contact />
+              </ErrorBoundary>
+            }
+          />
+          <Route
+            path="eligibility"
+            element={
+              <ErrorBoundary>
+                <Eligibility />
+              </ErrorBoundary>
+            }
+          />
+          <Route
+            path="services"
+            element={
+              <ErrorBoundary>
+                <Services />
               </ErrorBoundary>
             }
           />

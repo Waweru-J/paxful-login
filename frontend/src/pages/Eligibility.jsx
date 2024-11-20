@@ -2,7 +2,7 @@
 
 const Eligibility = () => {
   return (
-    <section className="py-10 bg-gray-100">
+    <section className="py-10 bg-gray-100 min-h-screen">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-blue-600 text-center">Check Your Eligibility</h2>
         <p className="text-center text-gray-700 mt-4">
