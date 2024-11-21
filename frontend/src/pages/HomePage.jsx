@@ -7,8 +7,9 @@ const HomePage = () => {
     <>
       <div className="min-h-screen">
       <Hero />
-      <Services />
       <Team />
+      <Services />
+     
       </div>
     </>
   )
