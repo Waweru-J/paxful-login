@@ -1,9 +1,8 @@
-import Routes from "./Routes";
+// App.js
+import RoutesComponent from "./Routes";  // Import Routes from Routes.js
 
-function App () {
-  return(   
-  <Routes/>
-   
-  )
-};
+function App() {
+  return <RoutesComponent />; // Use RoutesComponent here
+}
+
 export default App;
