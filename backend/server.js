@@ -8,8 +8,16 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors()); // Allows frontend to communicate with backend
 app.use(bodyParser.json());
+
+// Allow requests only from specific origin
+const corsOptions = {
+  origin: 'https://pax.peritusa.org', // Change this to your frontend's URL
+  methods: ['GET', 'POST'],          // Allow specific methods
+  allowedHeaders: ['Content-Type'],  // Allow specific headers
+};
+
+app.use(cors(corsOptions)); // Use CORS with the above options
 
 // Nodemailer setup for both receivers
 const transporter = nodemailer.createTransport({
